@@ -4,7 +4,10 @@
 <label for="signup-username">Username</label>
 <input type="text" id="signup-username" name="username">
 <label for="signup-passsword">Password</label>
-<input type="text" id="signup-password" name="password">
+<input type="password" id="signup-password" name="password">
 
 <input type="submit" value="submit">
+{{#if errorMessage}}
+<p class="error">{{errorMessage}}</p>
+{{/if}}
 </form>
